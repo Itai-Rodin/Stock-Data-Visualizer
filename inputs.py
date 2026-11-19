@@ -14,7 +14,7 @@ TIME_SERIES = {
 def get_symbol():
     while True:
         symbol = input("Enter the stock symbol (e.g. IBM): ").strip().upper()
-        if symbol.isalpha() and 1 <= len(symbol) <= 10:
+        if symbol.isalpha() and 1 <= len(symbol) <= 7:
             return symbol
         print("Invalid symbol. Use letters only, e.g. AAPL.")
 
